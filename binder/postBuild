@@ -1,6 +1,14 @@
+#!/bin/bash
+
 jupyter labextension install \
   jupyterlab-topbar-extension \
   jupyterlab-system-monitor \
   jupyterlab-topbar-text
 
 python -m bash_kernel.install --sys-prefix
+
+
+# Install Haploview: haplotype analysis
+# https://www.broadinstitute.org/haploview/haploview
+# version 4.2
+wget https://www.broadinstitute.org/ftp/pub/mpg/haploview/Haploview.jar
